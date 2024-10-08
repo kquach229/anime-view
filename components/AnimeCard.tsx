@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { MotionDiv } from './MotionDiv';
 
 export interface AnimeProp {
@@ -36,7 +35,7 @@ function AnimeCard({ anime, index }: Prop) {
         duration: 0.5,
       }}
       viewport={{ amount: 0 }}
-      className='max-w-sm rounded relative w-full'>
+      className='max-w-sm rounded relative w-full '>
       <div className='relative w-full h-[37vh]'>
         <Image
           src={`https://shikimori.one${anime.image.original}`}
